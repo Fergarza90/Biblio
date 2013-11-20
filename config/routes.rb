@@ -1,5 +1,5 @@
 Biblio::Application.routes.draw do
-  get "calando/index"
+  
   resources :books
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -10,10 +10,11 @@ Biblio::Application.routes.draw do
   get 'author' => 'authors#autor'
   get 'book' => 'books#book'
   get 'newbook' => 'newbooks#newbook'
-  
-  root 'welcome#index'
-  
+ 
+  resources :users
+  root 'users#new'
 
+  get "calando/index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

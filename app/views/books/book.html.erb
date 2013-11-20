@@ -18,8 +18,9 @@
   
   <p>Titulo:  <%= libro.title %> </p>
   <p>Categoria: <%= libro.category %> </p>
-  <p>Editorial: <%= libro.publishing %> </p>
-  <p>Disponibles: <%= libro.stock %> </p>  
+  <p>Editorial: <%= libro.publishing %> </p>  
+  <p>Disponibles(si/no): <%= libro.disponible %> </p> 
+  <p>link: <%= link_to 'Libro', libro.link %> </p> 
   </div>  
   <%end %>
   
