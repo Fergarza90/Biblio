@@ -4,4 +4,3 @@ class NewbooksController < ApplicationController
    #render :json=> @autor
   end
 end
-
