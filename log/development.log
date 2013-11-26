@@ -14940,3 +14940,35 @@ Started GET "/assets/books.js?body=1" for 200.79.223.59 at 2013-11-26 04:18:25 +
 
 
 Started GET "/assets/calando.js?body=1" for 200.79.223.59 at 2013-11-26 04:18:25 +0000
+
+
+Started GET "/book" for 200.79.223.59 at 2013-11-26 04:23:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#book as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/book.html.erb within layouts/application (199.9ms)
+Completed 200 OK in 254ms (Views: 223.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/books.js?body=1" for 200.79.223.59 at 2013-11-26 04:23:25 +0000
+
+
+Started GET "/assets/calando.js?body=1" for 200.79.223.59 at 2013-11-26 04:23:25 +0000
+
+
+Started GET "/newbook" for 200.79.223.59 at 2013-11-26 04:23:27 +0000
+Processing by NewbooksController#newbook as HTML
+  Rendered newbooks/newbook.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/newbook" for 200.79.223.59 at 2013-11-26 04:23:27 +0000
+Processing by NewbooksController#newbook as HTML
+  Rendered newbooks/newbook.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/calando.js?body=1" for 200.79.223.59 at 2013-11-26 04:23:27 +0000
+
+
+Started GET "/assets/books.js?body=1" for 200.79.223.59 at 2013-11-26 04:23:27 +0000
