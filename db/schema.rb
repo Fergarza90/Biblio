@@ -41,21 +41,4 @@ ActiveRecord::Schema.define(version: 20131120174549) do
     t.datetime "updated_at"
   end
 
-  create_table "lendouts", force: true do |t|
-    t.string   "name"
-    t.string   "lastname"
-    t.string   "title"
-    t.date     "lentoutd"
-    t.date     "return"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.string   "email"
-    t.string   "password"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
